@@ -1,0 +1,11 @@
+{
+  "name": "bimasena",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./input.css -o ./css/style.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.10"
+  }
+}

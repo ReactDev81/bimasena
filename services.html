@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bimasena - Services</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <!-- header -->
+    <header class="relative z-10">
+        <div class="max-w-[1545px] w-full mx-auto md:py-6 py-4 px-5">
+            <div class="flex items-center">
+                <div class="flex-1">
+                    <div class="logo_wrapper">
+                        <a href="/home.html">
+                            <img class="md:w-auto w-52" src="./assets/images/Bimasena-Logo.png" alt="Bimasena Logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="flex-1">
+
+                    <div class="desktop-menu-items md:block hidden">
+                        <ul class="flex items-center justify-end lg:gap-x-[58px] gap-x-2.5">
+                            <li>
+                                <a href="/about.html" class="inline-block hover:text-gold-dark transition font-light text-base tracking-[2.8px] uppercase text-blue py-2.5 px-5">About</a>
+                            </li>
+                            <li>
+                                <a href="/team.html" class="inline-block hover:text-gold-dark transition font-light text-base tracking-[2.8px] uppercase text-blue py-2.5 px-5">Team</a>
+                            </li>
+                            <li>
+                                <a href="/services.html" class="inline-block hover:text-gold-dark transition font-light text-base tracking-[2.8px] uppercase text-blue py-2.5 px-5">Services</a>
+                            </li>
+                            <li>
+                                <a href="/contact.html" class="button !bg-gold-dark hover:after:!bg-blue"><span class="z-10">Get In Touch</span> <img class="z-10" src="./assets/icons/arrow-up.png"></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mobile-menu md:hidden block">
+                        <span class="menu-open">
+                            <img class="ml-auto" src="./assets/icons/menu.png">
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- mob menu -->
+        <div class="mob-menu fixed top-0 z-50 w-full h-full bg-blue px-8 pt-5 pb-16">
+            <img class="absolute top-0 right-0 mix-blend-color-burn w-[224px] lg:w-auto" src="./assets/images/menu-bg-shape.png">
+            <div class="flex flex-col justify-between relative w-full h-full">
+                <div class="menu-close w-full ml-4">
+                    <img class="ml-auto" src="./assets/icons/cross.png">
+                </div>
+                <div class="menu-items">
+                    <ul>
+                        <li>
+                            <a href="/home.html" class="uppercase text-[34px] leading-[27px] text-gold-extra_light">Home</a>
+                        </li>
+                        <li class="mt-[38px]">
+                            <a href="/about.html" class="uppercase text-[34px] leading-[27px] text-gold-extra_light">About</a>
+                        </li>
+                        <li class="mt-[38px]">
+                            <a href="/team.html" class="uppercase text-[34px] leading-[27px] text-gold-extra_light">Team</a>
+                        </li>
+                        <li class="mt-[38px]">
+                            <a href="/services.html" class="uppercase text-[34px] leading-[27px] text-gold-extra_light">Services</a>
+                        </li>
+                        <li class="mt-[38px] get-in-touch">
+                            <a href="/contact.html" class="flex items-center gap-x-4 font-medium text-[33px] leading-[42px] underline duration-150 ease-in hover:text-gold-dark hover:pr-1">Get in touch <img class="duration-150 ease-in w-auto" src="./assets/icons/arrow-up_1.png"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="call-us">
+                    <a class="border border-solid border-gold-extra_light py-2.5 w-full block text-center uppercase" href="tel:0218356032">Call Us</a>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+
+        <!-- banner -->
+        <section class="banner-sec bg-white">
+            <div class="max-w-[1427px] w-full mx-auto lg:py-[198px] sm:py-24 py-12 px-8 sm:px-5">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:basis-6/12">
+                        <h2 class="md:max-w-[515px] w-full font-light text-2xl sm:text-[44px] sm:leading-[58px] text-blue service-title">Our Services <br><span class="font-medium">Empowering Your Financial Success</span></h2>
+                    </div>
+                    <div class="md:basis-6/12">
+                        <div class="md:pl-10">
+                            <p class="md:max-w-[647px] w-full pt-[18px] text-blue sm:text-2xl sm:leading-[44px] text-base sm:text-left text-justify">At Bimasena Artha Internasional, we offer a comprehensive range of interbank money market services tailored to meet the needs of financial institutions across Indonesia. With decades of experience and a commitment to excellence, our services are designed to ensure seamless, secure, and effective transactions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- service tab -->
+        <section class="service-tab-sec md:pt-[84px] md:pb-[124px] pb-12">
+            <div class="max-w-[1486px] w-full mx-auto px-8 sm:px-5">
+                <div class="flex flex-wrap tabs">
+                    <input type="radio" id="foreign-exchange" name="tab-control" checked>
+                    <input type="radio" id="bond-and-securities" name="tab-control">
+                    <input type="radio" id="other-services" name="tab-control">
+                    <div class="tabs-nav md:w-[250px] w-full md:pr-[87px]">
+                        <div class="flex flex-row md:flex-col gap-x-7 md:gap-x-0">
+                            <label for="foreign-exchange" class="tab-button cursor-pointer text-blue duration-300 font-light sm:text-[27px] sm:leading-9 text-xs leading-5">Foreign Exchange</label>
+                            <label for="bond-and-securities" class="tab-button cursor-pointer text-blue duration-300 font-light sm:text-[27px] sm:leading-9 text-xs md:mt-[42px] leading-5">Bond & Securities</label>
+                            <label for="other-services" class="tab-button cursor-pointer text-blue font-light duration-300 sm:text-[27px] sm:leading-9 text-xs md:mt-[42px] leading-5">Other Services</label>
+                        </div>
+                    </div>
+                    <div class="tab-content-sec md:flex-1 content-center sm:bg-gold-extra_light md:py-12 sm:p-10 sm:px-12 lg:px-[100px] mt-7 md:mt-0">
+                        
+                        <!-- Foreign Exchange -->
+                        <div class="tab-content" id="foreign-exchange">
+                            <div class="flex flex-col-reverse sm:flex-row items-center sm:gap-x-[68px] sm:max-w-[982px] w-full">
+                                <div class="content_wrapper max-w-[638px] w-full sm:mt-0 mt-7">
+                                    <h3 class="text-blue font-semibold sm:text-[37px] sm:leading-[45px] text-2xl sm:text-left text-center">Foreign Exchange</h3>
+                                    <p class="text-blue sm:mt-[18px] mt-3 sm:text-left text-justify">Bimasena offers a range of foreign exchange services, including spot, tom, today, swap, forward, and DNDF. These services provide clients with flexible and efficient solutions for their currency trading and hedging needs.</p>
+                                </div>
+                                <div class="foreign_image_shape flex items-end justify-center sm:scale-100 scale-75">
+                                    <img class="shape-1 sm:w-auto -mr-6 scale-y-90" src="./assets/images/foreign-shape-1.png">
+                                    <img class="shape-2 sm:w-auto scale-y-90" src="./assets/images/foreign-shape-2.png">
+                                    <img class="shape-3 sm:w-auto -ml-6 scale-y-90" src="./assets/images/foreign-shape-3.png">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bond and Securities  -->
+                        <div class="tab-content" id="bond-and-securities">
+                            <div class="flex flex-col-reverse sm:flex-row items-center sm:gap-x-[68px] sm:max-w-[982px] w-full">
+                                <div class="content_wrapper max-w-[638px] w-full sm:mt-0 mt-7">
+                                    <h3 class="text-blue font-semibold sm:text-[37px] sm:leading-[45px] text-2xl sm:text-left text-center">Bond and Securities</h3>
+                                    <p class="text-blue sm:mt-[18px] mt-3 sm:text-left text-justify">At Bimasena, we provide a comprehensive suite of services in bonds and securities trading, catering to a variety of investment needs.</p>
+                                </div>
+                                <div class="bonds_image_shape flex items-start justify-center sm:scale-100 scale-75">
+                                    <img class="shape-1 sm:w-auto -mr-24" src="./assets/images/bonds-shape-1.png">
+                                    <img class="shape-2 sm:w-auto -mt-4 z-[1]" src="./assets/images/bonds-shape-2.png">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Other Services -->
+                        <div class="tab-content" id="other-services">
+                            <div class="flex flex-col-reverse sm:flex-row items-center sm:gap-x-[68px] sm:max-w-[982px] w-full">
+                                <div class="content_wrapper max-w-[638px] w-full sm:mt-0 mt-7">
+                                    <h3 class="text-blue font-semibold sm:text-[37px] sm:leading-[45px] text-2xl sm:text-left text-center">Other Services</h3>
+                                    <p class="text-blue sm:mt-[18px] mt-3 sm:text-left text-justify">Our additional services are designed to support and enhance the core operations of our clients, ensuring they have access to critical information and infrastructure</p>
+                                </div>
+                                <div class="others_image_shape flex items-start justify-center sm:scale-100 scale-75">
+                                    <img class="shape-1 sm:w-auto -mr-32" src="./assets/images/others-shape-1.png">
+                                    <img class="shape-2 sm:w-auto mt-6 -ml-7 z-[1]" src="./assets/images/others-shape-2.png">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="service-sec">
+
+            <!-- Foreign Exchange -->
+            <div class="md:h-[1080px] md:bg-fixed md:bg-left md:bg-[length:50%_100vh] md:bg-no-repeat md:bg-[url('/assets/images/foreign-exchange.png')]">
+                <div class="flex flex-col md:flex-row h-full">
+                    <div class="md:basis-6/12">
+                        <img class="w-full md:h-full sm:h-[500px] h-[360px] object-cover md:hidden block" src="./assets/images/foreign-exchange.png">
+                    </div>
+                    <div class="md:basis-6/12 py-10 px-8 xl:p-24 sm:px-12 lg:py-12 sm:py-16 flex items-center bg-blue">
+                        <div class="lg:max-w-[650px] w-full">
+                            <h3 class="sm:text-[37px] sm:leading-[46px] text-2xl font-semibold">Foreign Exchange</h3>
+                            <p class="text-justify mt-5"><span class="font-medium mr-2">Spot: </span> Immediate transactions providing real-time access to currency trading, ensuring swift and efficient exchange.</p>
+                            <p class="text-justify mt-5"><span class="font-medium mr-2">Tom: </span> Settlements for the next business day, perfect for planning short-term currency needs.</p>
+                            <p class="text-justify mt-5"><span class="font-medium mr-2">Today: </span> Same-day settlement to meet urgent financial obligations and capitalize on immediate market opportunities.</p>
+                            <p class="text-justify mt-5"><span class="font-medium mr-2">Swap: </span> Manage short-term currency exposures with agreements for simultaneous currency borrowing and lending.</p>
+                            <p class="text-justify mt-5"><span class="font-medium mr-2">Forward: </span> Lock in exchange rates for future dates, protecting against market volatility.</p>
+                            <p class="text-justify mt-5"><span class="font-medium mr-2">DNDF: </span> Domestic Non-Deliverable Forward contracts settled in local currency.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Bonds and Securities -->
+            <div class="md:h-[1080px] md:bg-fixed md:bg-left md:bg-[length:50%_100vh] md:bg-no-repeat md:bg-[url('/assets/images/bonds-securities.png')]">
+                <div class="flex flex-col md:flex-row h-full">
+                    <div class="md:basis-6/12">
+                        <img class="w-full md:h-full sm:h-[500px] h-[360px] object-cover md:hidden block" src="./assets/images/bonds-securities.png">
+                    </div>
+                    <div class="md:basis-6/12 py-10 px-8 xl:p-24 sm:px-12 lg:py-12 sm:py-16 flex items-center bg-blue">
+                        <div class="lg:max-w-[650px] w-full">
+                            <h3 class="sm:text-[37px] sm:leading-[46px] text-2xl font-semibold">Bonds and Securities</h3>
+                            <p class="text-justify mt-5"><span class="font-medium mr-2">Surat Berharga Negara (SBN): </span> Enables investment in government bonds, ensuring stable returns and low risk backed by government credit.</p>
+                            <p class="text-justify mt-5"><span class="font-medium mr-2">Surat Berharga Syariah Negara (SBSN): </span> Facilitates investments in Islamic government bonds, adhering to Shariah principles and offering ethical investment opportunities.</p>
+                            <p class="text-justify mt-5"><span class="font-medium mr-2">Surat Berharga Syariah Negara (SBSN): </span> Features bonds with fixed interest rates, allowing investors to plan their long-term investment strategies with predictable returns.</p>
+                            <p class="text-justify mt-5"><span class="font-medium mr-2">Additional Services: </span> Offers tailored solutions to enhance investment strategies across varying risk profiles and time frames.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Other Services -->
+            <div class="md:h-[1080px] md:bg-fixed md:bg-left md:bg-[length:50%_100vh] md:bg-no-repeat md:bg-[url('/assets/images/others-service.png')]">
+                <div class="flex flex-col md:flex-row h-full">
+                    <div class="md:basis-6/12">
+                        <img class="w-full md:h-full sm:h-[500px] h-[360px] object-cover md:hidden block" src="./assets/images/others-service.png">
+                    </div>
+                    <div class="md:basis-6/12 py-10 px-8 xl:p-24 sm:px-12 lg:py-12 sm:py-16 lg:flex items-center bg-blue">
+                        <div class="lg:max-w-[650px] w-full">
+                            <h3 class="sm:text-[37px] sm:leading-[46px] text-2xl font-semibold">Other Services</h3>
+                            <p class="text-justify mt-5"><span class="font-medium mr-2">Market Info: </span> Supplies continuous market updates, including real-time pricing and in-depth market reviews, helping clients stay informed and proactive.</p>
+                            <p class="text-justify mt-5"><span class="font-medium mr-2">Infrastructure Handling: </span> Expert management of financial platforms such as Reuters, Bloomberg, Voice Box, and BI-ETP, ensuring seamless data flow and market access.</p>
+                            <p class="text-justify mt-5"><span class="font-medium mr-2">Additional Services: </span> Includes various enhancements designed to improve efficiency and decision-making processes, with solutions customized to each client’s unique requirements.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+
+        <!-- about us -->
+        <section class="about-us-sec bg-gold-extra_light md:bg-white py-12 sm:py-24 lg:py-[168px] px-8 sm:px-5">
+            <div class="max-w-[1522px] w-full bg-transparent md:bg-gold-extra_light md:p-[100px] sm:p-2.5 mx-auto">
+                <div class="max-w-[1042px] w-full text-center mx-auto">
+                    <p class="font-light sm:text-5xl sm:leading-[64px] text-2xl text-blue">Discover how our experience transforms us from broker into partner.</p>
+                    <a class="button mx-auto sm:mt-10 mt-5" href="#"><span class="z-10">About Us</span> <img class="z-10" src="./assets/icons/arrow-up.png"></a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-blue relative">
+
+        <img class="absolute top-0 right-[21px] mix-blend-color-burn w-80 lg:w-auto sm:block hidden" src="./assets/images/bg-logo-mark.png">
+
+        <div class="top-section">
+            <div class="flex items-center max-w-[1528px] w-full mx-auto px-8 sm:px-5 lg:py-40 sm:py-20 pt-[52px] pb-[39px]">
+                <div class="lg:flex-1">
+                    <p class="font-montserrat font-light sm:text-5xl sm:leading-[64px] text-2xl text-[#FDFFEE] max-w-[530px] w-full">Ready to elevate your financial strategy? Let’s collaborate.</p>
+                </div>
+                <div class="flex-1"></div>
+            </div>
+        </div>
+
+        <div class="content-sec border-t border-solid border-[#F9F5F2] lg:pt-40 lg:pb-[200px] sm:py-24 pt-12">
+            <div class="flex flex-wrap items-center justify-between md:flex-nowrap max-w-[1528px] w-full mx-auto px-8 sm:px-5">
+                <div class="xl:basis-1/2 md:basis-2/6 order-1 md:order-none">
+                    <div class="logo_wrapper">
+                        <img class="sm:w-auto w-[50px]" src="./assets/images/Bimasena-Logomark-Icon.png" alt="Bimasena Logo">
+                    </div>
+                </div>
+                <div class="xl:basis-1/4 md:basis-2/6 basis-full order-3 sm:mt-10 mt-4 md:mt-0 md:order-none">
+                    <div class="contact_details">
+                        <ul>
+                            <li>
+                                <p class="text-[#F9F5F2] font-light sm:text-lg max-w-[250px] w-full text-xs leading-[20px]">Menara Imperium Floor 18. Jl HR Rasuna Said Kav 1 Jakarta, Indonesia 12980</p>
+                            </li>
+                            <li class="sm:mt-[24px] mt-2.5">
+                                <a class="flex items-center gap-x-[11px] sm:text-lg sm:leading-[22px] text-xs leading-[15px] underline" href="mailto:corporate@bimasenaarthaintl.co.id"><img class="sm:w-auto w-3" src="./assets/icons/envelope.png"> corporate@bimasenaarthaintl.co.id</a>
+                            </li>
+                            <li class="sm:mt-[17px] mt-2.5">
+                                <a class="flex items-center gap-x-[11px] sm:text-lg sm:leading-[22px] text-xs leading-[15px]" href="tel:0218356032"><img class="sm:w-auto w-3" src="./assets/icons/phone.png"> 021 835 6032</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="xl:basis-1/4 md:basis-2/6 order-2 md:order-none">
+                    <div class="get-in-touch">
+                        <a href="#" class="flex items-center justify-end sm:gap-x-4 gap-x-[7px] font-montserrat font-medium sm:text-[35px] sm:leading-[45px] underline text-[15px] leading-[19px] duration-150 ease-in hover:text-gold-dark hover:pr-1">Get in touch <img class="duration-150 ease-in sm:w-auto w-[9px]" src="./assets/icons/arrow-up_1.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright-sec sm:py-9 pt-9 pb-5 px-8 sm:px-5">
+            <div class="flex flex-col items-start xs:flex-row xs:items-center xs:justify-between max-w-[1528px] w-full mx-auto">
+                <div class="copyright lg:flex-1">
+                    <p class="text-white font-normal sm:text-base sm:leading-5 text-[10px] leading-[12px]">Copyright © 2024, Bimasena Artha Internasional</p>
+                </div>
+                <div class="copyright-by lg:flex-1 mt-2.5 xs:mt-0">
+                    <p class="text-white font-normal sm:text-[15px] sm:leading-5 flex items-center justify-end gap-x-3 text-[10px] leading-[12px]">Site by <img src="./assets/images/tenstud.png"></p>
+                </div>
+            </div>
+        </div>
+
+        <img class="absolute bottom-0 left-0 mix-blend-color-burn w-80 lg:w-auto sm:block hidden" src="./assets/images/bg-logomark.png">
+
+    </footer>
+
+</body>
+
+    <!-- scripts links -->
+    <script src="./index.js"></script>
+</html>
